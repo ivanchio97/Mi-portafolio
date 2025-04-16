@@ -1,0 +1,90 @@
+.proyects{
+  display: flex;
+  font-style: italic;
+  background-color: #f5f5f5;
+  height: 700px;
+  flex-direction: column;
+  padding: 40px;
+  gap: 30px;
+  align-items: center;
+}
+.slider{
+  height: 300px;
+  padding: 10px;
+  width: 90%;
+}
+.item{
+  display: flex !important ;
+  width: 100%;
+  height: 270px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid gray;
+  justify-content: center;
+}
+.item-image{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-image img{
+  height: 90%;
+}
+
+.item-description{
+  text-align: center;
+}
+
+.item-data{
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+.item-buttons{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.item-buttons button{
+  width: 150px;
+  height: 40px;
+  border: 3px solid rgb(70, 69, 69);
+  border-radius: 5px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 13px;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.item-buttons button:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 10px black;
+}
+
+.bi-play-circle-fill, .bi-github{
+  color: black;
+  font-weight: bold;
+}
+.flecha-izquierda{
+  position: absolute;
+  top:110px;
+  left:-50px;
+  cursor: pointer;
+  color: rgb(34, 33, 33);
+}
+
+.flecha-derecha{
+  position: absolute;
+  top:110px;
+  right:-50px;
+  cursor: pointer;
+  color: rgb(34, 33, 33);
+}
