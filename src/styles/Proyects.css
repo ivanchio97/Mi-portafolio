@@ -1,36 +1,33 @@
 .proyects{
   display: flex;
-  font-style: italic;
-  background-color: #f5f5f5;
-  height: 700px;
-  flex-direction: column;
-  padding: 40px;
-  gap: 30px;
-  align-items: center;
+  justify-content: center;
 }
 .slider{
-  height: 300px;
+  height: 350px;
   padding: 10px;
   width: 90%;
+  margin-top: -20px;
 }
 .item{
   display: flex !important ;
   width: 100%;
-  height: 270px;
+  height: 320px;
   border-radius: 10px;
   overflow: hidden;
   border: 3px solid gray;
   justify-content: center;
+  padding: 10px;
 }
 .item-image{
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .item-image img{
-  height: 90%;
+  width: 90%;
 }
 
 .item-description{
@@ -50,6 +47,7 @@
   display: flex;
   gap: 20px;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .item-buttons button{
   width: 150px;
@@ -75,16 +73,18 @@
 }
 .flecha-izquierda{
   position: absolute;
-  top:110px;
-  left:-50px;
+  top:130px;
+  left:-30px;
   cursor: pointer;
   color: rgb(34, 33, 33);
+  font-size: 30px;
 }
 
 .flecha-derecha{
   position: absolute;
-  top:110px;
-  right:-50px;
+  top:130px;
+  right:-30px;
   cursor: pointer;
   color: rgb(34, 33, 33);
+  font-size: 30px;
 }

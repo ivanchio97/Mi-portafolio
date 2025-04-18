@@ -1,5 +1,6 @@
 import {React, useState} from 'react'
-import { Link, Outlet } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import '../styles/NavBar.css'
 
 const NavBar = () =>{
 
@@ -31,8 +32,6 @@ const NavBar = () =>{
       <button><i class="bi bi-square"></i></button>
       <button><i class="bi bi-x"></i></button>
       </div>
-
-
       </nav>
 
       <header className='menu'>
@@ -46,8 +45,6 @@ const NavBar = () =>{
           <li><Link to = '/sobremi' className={ active[2] ? `active` : `link`} onClick={()=>{toogle(2)}} >Sobre mi</Link></li>
         </ul>
       </header>
-
-      <Outlet />
 
 </div>
   )

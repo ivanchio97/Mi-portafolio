@@ -1,3 +1,4 @@
+
 .left{
   text-align: left;
   width: 50%;
@@ -18,8 +19,13 @@
   font-size: 19px;
   margin-bottom: 15px;
 }
-#download{
+.left-buttons{
   margin-top: 20px;
+}
+.hide-button{
+  display: none;
+}
+#download{
   border: none;
   background-image: linear-gradient(-45deg, #0781f3, #063968);
   font-weight: 700;
@@ -48,11 +54,70 @@
   flex-direction: column;
   gap: 7px;
   align-items: center;
+  width: 42%;
+  margin-top: -45px;
 }
-.avatar{
-  margin-top: -35px;
+
+.avatar-profile{
+  width: 80%;
 }
 .tecnologias{
   display: flex;
   gap: 10px;
+}
+@media only screen and (max-width:800px){
+  .main-container{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px;
+  }
+  .left{
+    width: 100%;
+    text-align: center;
+  }
+  .right{
+    width: 100%;
+  }
+  .avatar-profile{
+    width: 40%;
+  }
+  .saludo{
+    font-size: 20px;
+    text-align: center;
+  }
+  .left h1{
+    font-size: 45px;
+  }
+  .frase{
+    font-size: 16px;
+    margin:5px 0;
+    text-align: center;
+  }
+  .desc{
+    display: none;
+  }
+  #download{
+    margin-bottom: 0px;
+  }
+  .h1{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    line-height: 40px;
+    justify-content: center;
+  }
+  .left-buttons{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+  }
+  .hide-button{
+    display: block;
+  }
 }

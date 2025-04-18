@@ -58,7 +58,7 @@ const Proyects = () =>{
 
 
   return(
-    <main className='proyects '>
+    <main className='proyects'>
       <Slider {...settings} className='slider' >
       {
           names.map((element,ind)=>{
