@@ -12,10 +12,9 @@ body{
   display: flex;
   height: 100vh;
   justify-content: center;
-  width: 100vw;
+  max-width: 100vw;
   background-image: linear-gradient(-45deg, #0781f3, #063968);
   font-family: "Roboto", sans-serif;
-  min-width: 910px;
   align-items: center;
 }
 
@@ -55,17 +54,38 @@ main{
   top: 2px;
   left: 5px;
 }
-@media only screen and (max-width:800px){
+
+.back-arrow{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #b9bbbd;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top:25px;
+  left:25px;
+  display: none;
+}
+.back-arrow i{
+  font-size: 47px;
+  line-height: 47px;
+  
+}
+
+@media only screen and (max-width:700px){
   
   body{
     background-image: none;
     background-color: #8f8b8b;
     min-width: auto;
-    width: 100%;
     display: block;
   }
-  main{
-    width: 100vw;
-    height: 100vh;
+  .back-arrow{
+    display: flex;
   }
 }

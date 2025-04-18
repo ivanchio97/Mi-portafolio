@@ -8,6 +8,7 @@ import study from '../assets/study.gif'
 import Slider from "react-slick";
 import 'slick-carousel/slick/slick.css'
 import "slick-carousel/slick/slick-theme.css"
+import BackArrow from './BackArrow'
 
 const Proyects = () =>{
 
@@ -59,6 +60,8 @@ const Proyects = () =>{
 
   return(
     <main className='proyects'>
+      <BackArrow/>
+      <h1 className='hide-button' >Mis proyectos</h1>
       <Slider {...settings} className='slider' >
       {
           names.map((element,ind)=>{

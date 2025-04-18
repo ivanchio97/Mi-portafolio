@@ -73,7 +73,7 @@
 }
 .flecha-izquierda{
   position: absolute;
-  top:130px;
+  top:50%;
   left:-30px;
   cursor: pointer;
   color: rgb(34, 33, 33);
@@ -82,9 +82,37 @@
 
 .flecha-derecha{
   position: absolute;
-  top:130px;
+  top:50%;
   right:-30px;
   cursor: pointer;
   color: rgb(34, 33, 33);
   font-size: 30px;
+}
+@media only screen and (max-width: 700px){
+  .proyects{
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+    padding: 0;
+    height: 100svh;
+    width: 100%;
+    border-radius: 0px;
+    align-items: center;
+
+  }
+  .slider{
+    height: 55vh;
+    width: 70%;
+  }
+  .item{
+    height: 460px;
+    flex-direction: column;
+  }
+  .item-image{
+    width: 100%;
+  }
+  .item-data{
+    width: 100%;
+  }
 }
