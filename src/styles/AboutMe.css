@@ -22,8 +22,11 @@ p{
 }
 .about-me-right{
   display: flex;
+  gap: 18px;
   flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
 }
 .about-me-section{
   display: flex;
@@ -35,4 +38,34 @@ p{
   display: flex;
   gap: 70px;
   justify-content: center;
+}
+
+@media only screen and (max-width:700px){
+  .about-me{
+    width: 100%;
+    height: 100svh;
+    text-align: center;
+  }
+  .my-data{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+  }
+  p{
+    text-align: center;
+    margin-top: 0;
+  }
+  .about-me-title{
+    margin-top: 0;
+  }
+  .about-me-left{
+    width: 100%;
+  }
+  .about-me-right{
+    width: 100%;
+  }
+  .about-me-title{
+    font-size: 20px;
+  }
 }

@@ -42,7 +42,7 @@ const NavBar = () =>{
         <ul>
           <li><Link to = '/' className={ active[0] ? `active` : `link`} onClick={()=>{toogle(0)}} >Inicio</Link></li>
           <li><Link to = '/proyectos' className={ active[1] ? `active` : `link`} onClick={()=>{toogle(1)}} >Proyectos</Link></li>
-          <li><Link to = '/sobremi' className={ active[2] ? `active` : `link`} onClick={()=>{toogle(2)}} >Sobre mi</Link></li>
+          <li><Link to = '/sobremi' className={ active[2] ? `active` : `link`} onClick={()=>{toogle(2)}} >Sobre mí</Link></li>
         </ul>
       </header>
 

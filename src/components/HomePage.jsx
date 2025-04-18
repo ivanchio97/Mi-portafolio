@@ -15,6 +15,7 @@ const HomePage = () =>{
       <strong className='desc'>Estoy en busca de oprtunidades laborales para inciarme como desarrollador</strong> <br/>
       <div className='left-buttons'>
         <button id="download" className='hide-button'><Link to='proyectos' ><span>Ver proyectos</span> <i class="bi bi-person-workspace"></i> </Link></button>
+        <button id="download" className='hide-button'><Link to='sobremi' ><span>Sobre mi</span> <i class="bi bi-file-earmark-person"></i> </Link></button>
         <button id="download"><a href="/Curriculum2025.pdf" download><span>Descargar CV</span><i class="bi bi-download"></i></a></button>
       </div>
 
